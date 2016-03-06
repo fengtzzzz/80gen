@@ -10,6 +10,8 @@ class LoginForm extends CFormModel
 	public $username;
 	public $password;
 	public $rememberMe;
+        public $haha;
+        public $whatIsIt;
 
 	private $_identity;
 
@@ -22,6 +24,7 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			// username and password are required
+                    //test what is it.
 			array('username, password', 'required'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
@@ -37,6 +40,7 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			'rememberMe'=>'Remember me next time',
+                        'aha' => 'gogogo',
 		);
 	}
 
